@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #tan {
+        width: 400px;
+        height: 300px;
+        background: tan;
+        display: inline-block;
+      }
+
+      #pink {
+        width: 400px;
+        height: 300px;
+        background: pink;
+        display: inline-block;
+      }
+
+      #showCoords,
+      #state {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        left: 840px;
+        top: 5px;
+        border: 1px solid;
+        padding-left: 5px;
+      }
+
+      #state {
+        top: 55px;
+      }
+
+      img.dog {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tan" style="border: none"></div>
+    <div id="pink" style="border: none"></div>
+    <img
+      id="dog1"
+      class="dog"
+      style="position: absolute; left: 10px; top: 320px"
+      src="https://i.pinimg.com/originals/29/89/24/29892412edad014c8aa3de8d2e9f65d6.jpg"
+      draggable="true"
+      data-breed="pink"
+    />
+    <img
+      id="dog2"
+      class="dog"
+      style="position: absolute; left: 220px; top: 320px"
+      src="https://static.dw.com/image/42588371_403.jpg"
+      draggable="true"
+      data-breed="pink"
+    />
+    <img
+      id="dog3"
+      class="dog"
+      style="position: absolute; left: 430px; top: 320px"
+      src="https://www.telegraph.co.uk/content/dam/family/2021/04/19/GettyImages-138519494_trans_NvBQzQNjv4BqrXhEI-4tSWVCR5BednaDSboj51agoKXn1K2ndqwwHyw.jpg?imwidth=680"
+      draggable="true"
+      data-breed="tan"
+    />
+    <img
+      id="dog4"
+      class="dog"
+      style="position: absolute; left: 640px; top: 320px"
+      src="https://homelivingpets.com/wp-content/uploads/2019/08/Screenshot_13.png"
+      draggable="true"
+      data-breed="tan"
+      data-price="price"
+    />
+    <div id="showCoords"></div>
+    <div id="state"></div>
+    <input
+      type="button"
+      name=""
+      onclick="check()"
+      value="Check order"
+      style="position: absolute; left: 840px; top: 150px"
+    />
+    <script src="./script.js"></script>
+  </body>
+</html>
